@@ -34,4 +34,11 @@ router.post('/login', (req, res) => {
     }
 });
 
+// POST: api/accounts/authorized
+router.post('/authorized', (req, res) => {
+    res.json({
+        authorized: true
+    });
+});
+
 module.exports = router;
